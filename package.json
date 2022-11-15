@@ -1,0 +1,21 @@
+{
+    "name": "git-push",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "bin": {
+        "gitpush": "./dist/index.js"
+    },
+    "scripts": {
+        "dev": "npx tsc && npm i -g ."
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.9",
+        "@types/prompts": "^2.4.1",
+        "typescript": "^4.8.4"
+    },
+    "dependencies": {
+        "commander": "^9.4.1",
+        "prompts": "^2.4.2"
+    }
+}
