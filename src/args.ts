@@ -24,7 +24,9 @@ const initArgs = async (): Promise<ResponseObject> => {
             message: "Enter commit message:",
         });
 
-    const response = await prompts(promptsArr);
+    const response = await prompts(promptsArr,{onCancel:()=>{
+        process.exit(1)
+    }});
     return Object.assign({}, response, options) as ResponseObject;
 };
 

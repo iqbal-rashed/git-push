@@ -69,9 +69,30 @@ const commandArr = (obj: ResponseObject) => [
 ];
 
 const conflictCmdArr = (obj: ResponseObject) => [
-    commandArr(obj)[1],
-    commandArr(obj)[2],
-    ...commandArr(obj).slice(6),
+    {
+        cmd: `git add .`,
+        message: "Loading adding ...",
+    },
+    {
+        cmd: `git commit -m "${obj.message}"`,
+        message: "Loading committing ...",
+    },
+    {
+        cmd: `git checkout ${obj.branch}`,
+        message: `Loading ${obj.branch} branch ...`,
+    },
+    {
+        cmd: `git merge main`,
+        message: "Loading merging main ...",
+    },
+    {
+        cmd: `git push --set-upstream origin ${obj.branch}`,
+        message: `Loading pushing ${obj.branch} branch`,
+    },
+    {
+        cmd: "git checkout main",
+        message: `Loading main branch`,
+    },
 ];
 
 export default performCommand;
