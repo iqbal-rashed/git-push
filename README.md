@@ -12,7 +12,7 @@
 ## Usage
 Go to your project run <b>gitpush</b> and see magic. There's two way use this project
 
-<h6>First way:</h6> 
+<h5>First way:</h5> 
 run <b>gitpush</b> command and answer question
-<h6>Second way:</h6> 
+<h5>Second way:</h5> 
 run <b>gitpush -b [branch name] -m [commit message] </b> command and answer question
