@@ -1,5 +1,5 @@
-<h1 align="center"> Git-push </h1>
-<p align="center">
+<h1> Git-push </h1>
+<p>
   <b >This is a simple command line tool to make push code easy for out company name Digital Gregg.</b>
 </p>
 
