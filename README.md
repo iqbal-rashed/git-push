@@ -10,9 +10,9 @@
 * step 2: install globally or inside repo run command npm i -g .
 
 ## Usage
-Go to your project run <b>gitpush</b> and see magic. There's two way use this project
+Go to your project run <b>"gitpush"</b> and see magic. There's two way use this project
 
 <h4>First way:</h4> 
-run <b>gitpush</b> command and answer question
+run <b>"gitpush"</b> command and answer question
 <h4>Second way:</h4> 
-run <b>gitpush -b [branch name] -m [commit message] </b> command and answer question
+run <b>"gitpush -b [branch name] -m [commit message]" </b> command and answer question
